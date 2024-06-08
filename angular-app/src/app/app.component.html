@@ -1,0 +1,34 @@
+<main>
+  <header>
+    <p id="p1" class="roboto-regular">Your Watchlist</p>
+  </header>
+
+  <p id="p2" class="roboto-thin">
+    Your Watchlist is the place to track the titles you want to watch.
+  </p>
+
+  <form>
+    <input
+      class="movie-input roboto-thin"
+      type="text"
+      [(ngModel)]="movieText"
+      name="movieText"
+    />
+    <button class="movie-button" type="submit" (click)="addMovie()">
+      <i class="fa-solid fa-plus"></i>
+    </button>
+  </form>
+
+  <div class="movie-container">
+    <ul class="movie-list">
+      <div *ngFor="let movie of movies" class="movie">
+        <li class="movie-item">
+          {{ movie }}
+        </li>
+        <button class="cross-btn" (click)="deleteMovie(movie)">
+          <i class="fa-solid fa-x"></i>
+        </button>
+      </div>
+    </ul>
+  </div>
+</main>
