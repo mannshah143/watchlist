@@ -1,8 +1,8 @@
 # IMDb Watchlist App
 
 This project is an exploration of five different front-end frameworks by creating a Watchlist App similar to IMDb Watchlist in each one with local storage as a mock database. The frameworks used are:
-- Vanilla JavaScript
-- React
+- Vanilla JS
+- React 
 - Angular
 - Vue
 - Svelte
@@ -13,7 +13,7 @@ The purpose of this project is to learn and compare how different frameworks han
 
 ## Frameworks Used
 
-### 1. Vanilla JavaScript
+### 1. Vanilla JS
 **Pros:**
 - No dependencies, pure JavaScript.
 - Full control over the implementation.
@@ -73,35 +73,27 @@ The purpose of this project is to learn and compare how different frameworks han
 ## Event Handling
 
 - **Vanilla JavaScript:** Event listeners are added manually to DOM elements.
-- **React:** Event handlers are added as properties on JSX elements (e.g., `onClick`).
-- **Angular:** Uses Angular's event binding syntax (e.g., `(click)="methodName()"`).
-- **Vue:** Uses Vue's directive syntax (e.g., `v-on:click="methodName"`).
-- **Svelte:** Uses a simple syntax for event handling (e.g., `on:click={methodName}`).
+- **React:** Event handlers are added as properties on JSX elements (e.g., onClick).
+- **Angular:** Uses Angular's event binding syntax (e.g., (click)="methodName()").
+- **Vue:** Uses Vue's directive syntax (e.g., v-on:click="methodName").
+- **Svelte:** Uses a simple syntax for event handling (e.g., on:click={methodName}).
 
 ## Lifecycle Management
 
 - **Vanilla JavaScript:** Manual handling of component lifecycle (e.g., setting up and tearing down event listeners).
 - **React:** Uses lifecycle methods in class components or hooks (useEffect) in functional components.
-- **Angular:** Uses lifecycle hooks (e.g., `ngOnInit`, `ngOnDestroy`).
-- **Vue:** Uses lifecycle hooks (e.g., `created`, `mounted`, `destroyed`).
-- **Svelte:** Uses lifecycle functions (e.g., `onMount`, `onDestroy`).
+- **Angular:** Uses lifecycle hooks (e.g., ngOnInit, ngOnDestroy).
+- **Vue:** Uses lifecycle hooks (e.g., created, mounted, destroyed).
+- **Svelte:** Uses lifecycle functions (e.g., onMount, onDestroy).
 
 ## Data Binding
 
 - **Vanilla JavaScript:** Manual DOM manipulation to bind data.
 - **React:** One-way data binding with props and state.
-- **Angular:** Two-way data binding with `ngModel`.
-- **Vue:** Two-way data binding with `v-model`.
-- **Svelte:** Two-way data binding with `bind:` syntax.
+- **Angular:** Two-way data binding with ngModel.
+- **Vue:** Two-way data binding with v-model.
+- **Svelte:** Two-way data binding with bind: syntax.
 
 ## My Preference
 
 I liked Svelte the best because of its simplicity and the fact that it compiles to highly efficient vanilla JavaScript. The reactive statements and stores in Svelte make state management straightforward, and the smaller bundle size improves performance. Additionally, the syntax is clean and easy to learn, making development a more enjoyable experience.
-
-## Installation and Usage
-
-To run any of the apps, navigate to the respective directory and follow the instructions in its README or use the following general steps:
-
-1. **Install dependencies**:
-   ```sh
-   npm install
